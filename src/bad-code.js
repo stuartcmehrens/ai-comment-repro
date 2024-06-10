@@ -14,3 +14,7 @@ function test4(req,res) {
         doSmth(pth);
     })
 }
+
+function helloWorld() {
+    return `Hello, World!`;
+}
