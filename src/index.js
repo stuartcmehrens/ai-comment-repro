@@ -8,3 +8,14 @@ function test1() {
     }
     someFunc();
 }
+
+function test2() {
+    function someFunc(val) {
+        createFile({
+            // ruleid:path-join-resolve-traversal
+            filePath: path.resolve(opts.path, val)
+        })
+        return true
+    }
+    someFunc()
+}
